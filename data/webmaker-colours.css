@@ -1,0 +1,15 @@
+
+.webmaker-colours {
+  background-colour: white;
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.webmaker-circle {
+  width: 50px;
+  height: 50px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+}
