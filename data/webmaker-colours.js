@@ -156,11 +156,11 @@
       console.log("render-srcs has run " + count + " times.");
 
       // Show all interesting srcs
-      console.log("Interesting video:", srcs.video);
-      console.log("Interesting audio:", srcs.audio);
-      console.log("Interesting iframe:", srcs.iframe);
-      console.log("Interesting img:", srcs.img);
-      console.log("Interesting a:", srcs.a);
+//      console.log("Interesting video:", srcs.video);
+//      console.log("Interesting audio:", srcs.audio);
+//      console.log("Interesting iframe:", srcs.iframe);
+//      console.log("Interesting img:", srcs.img);
+//      console.log("Interesting a:", srcs.a);
 
       console.log("Interesting meta:", parseMeta());
 
