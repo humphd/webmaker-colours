@@ -163,6 +163,8 @@
       console.log("Interesting a:", srcs.a);
 
       console.log("Interesting meta:", parseMeta());
+
+//      console.log("Interesting fonts:", parseFonts());
     });
 
     self.port.on("find-elements", function() {
