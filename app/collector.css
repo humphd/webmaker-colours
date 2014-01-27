@@ -1,0 +1,30 @@
+/* Mixins */
+.no-padding {
+  padding: 0;
+}
+
+.constrained {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.light {
+  font-weight: 100;
+}
+  .light strong {
+    font-weight: 500;
+  }
+
+/* Components */
+#webmaker-collector header {
+  background-color: #013e5f;
+  color: #fff;
+  margin-top: 0;
+}
+
+.color-data {
+  background-color: rgba(255,255,255,1);
+  font-size: 1.2rem;
+  padding: 5px;
+  margin-top: 3em;
+}
