@@ -1,0 +1,159 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "name": "webmaker-colour",
+  "id": "http://jsonschema.net",
+  "required": false,
+  "properties": {
+    "colours": {
+      "type": "array",
+      "id": "http://jsonschema.net/colours",
+      "required": true,
+      "items": {
+        "type": "object",
+        "id": "http://jsonschema.net/colours/0",
+        "required": false,
+        "properties": {
+          "b": {
+            "type": "number",
+            "minimum": "0",
+            "maximum": "255",
+            "id": "http://jsonschema.net/colours/0/b",
+            "required": true
+          },
+          "g": {
+            "type": "number",
+            "minimum": "0",
+            "maximum": "255",
+            "id": "http://jsonschema.net/colours/0/g",
+            "required": true
+          },
+          "hex": {
+            "type": "string",
+            "id": "http://jsonschema.net/colours/0/hex",
+            "required": true
+          },
+          "r": {
+            "type": "number",
+            "minimum": "0",
+            "maximum": "255",
+            "id": "http://jsonschema.net/colours/0/r",
+            "required": true
+          }
+        }
+      }
+    },
+    "fonts": {
+      "type": "array",
+      "id": "http://jsonschema.net/fonts",
+      "required": true,
+      "items": {
+        "type": "object",
+        "id": "http://jsonschema.net/fonts/0",
+        "required": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "id": "http://jsonschema.net/fonts/0/name",
+            "required": true
+          },
+          "resources": {
+            "type": "array",
+            "id": "http://jsonschema.net/fonts/0/resources",
+            "required": true,
+            "items": {
+              "type": "object",
+              "id": "http://jsonschema.net/fonts/0/resources/0",
+              "required": true,
+              "properties": {
+                "format": {
+                  "type": "string",
+                  "id": "http://jsonschema.net/fonts/0/resources/0/format",
+                  "required": true
+                },
+                "url": {
+                  "type": "string",
+                  "id": "http://jsonschema.net/fonts/0/resources/0/url",
+                  "required": true
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "media": {
+      "type": "object",
+      "id": "http://jsonschema.net/media",
+      "required": true,
+      "properties": {
+        "audio": {
+          "type": "array",
+          "id": "http://jsonschema.net/media/audio",
+          "required": true,
+          "items": {
+            "type": "object",
+            "id": "http://jsonschema.net/media/audio/0",
+            "required": false,
+            "properties": {
+              "src": {
+                "type": "string",
+                "id": "http://jsonschema.net/media/audio/0/src",
+                "required": true
+              },
+              "type": {
+                "type": "string",
+                "id": "http://jsonschema.net/media/audio/0/type",
+                "required": true
+              }
+            }
+          }
+        },
+        "images": {
+          "type": "array",
+          "id": "http://jsonschema.net/media/images",
+          "required": true,
+          "items": {
+            "type": "object",
+            "id": "http://jsonschema.net/media/images/0",
+            "required": false,
+            "properties": {
+              "src": {
+                "type": "string",
+                "id": "http://jsonschema.net/media/images/0/src",
+                "required": true
+              },
+              "type": {
+                "type": "string",
+                "id": "http://jsonschema.net/media/images/0/type",
+                "required": true
+              }
+            }
+          }
+        },
+        "video": {
+          "type": "array",
+          "id": "http://jsonschema.net/media/video",
+          "required": true,
+          "items": {
+            "type": "object",
+            "id": "http://jsonschema.net/media/video/0",
+            "required": false,
+            "properties": {
+              "src": {
+                "type": "string",
+                "id": "http://jsonschema.net/media/video/0/src",
+                "required": true
+              },
+              "type": {
+                "type": "string",
+                "id": "http://jsonschema.net/media/video/0/type",
+                "required": true
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

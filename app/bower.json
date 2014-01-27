@@ -1,0 +1,20 @@
+{
+  "name": "Webmaker Colours",
+  "version": "0.0.1",
+  "homepage": "http://github.com/mozilla/webmaker-colours",
+  "authors": [
+    "Mozilla"
+  ],
+  "license": "MPL",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "makerstrap": "0.0.3",
+    "angular": "1.2.10"
+  }
+}
