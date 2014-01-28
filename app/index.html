@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>WebmakerCollector</title>
+  <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.css">
   <link rel="stylesheet" type="text/css" href="bower_components/makerstrap/makerstrap.complete.min.css">
   <link rel="stylesheet/less" type="text/css" href="collector.less">
 </head>
@@ -10,8 +11,8 @@
   <div id="webmaker-collector" ng-app="wmCollector" ng-controller="collectorController">
     <header class="page-header container">
       <h2 class="light pull-left"><strong>Webmaker</strong>Collector</h2>
-      <button class="btn btn-default pull-right">
-        X
+      <button class="close pull-right">
+        <i class="fa fa-times-circle"></i>
       </button>
     </header>
 
@@ -31,8 +32,9 @@
 
         <div class="row swatches">
           <div class="col-xs-4" style="background-color: #{{ colour.hex }};" ng-repeat="colour in scrapeData.colours">
-            <div ng-show="swatchGroup === 'hex'" class="color-data">#{{ colour.hex }}</div>
+            <div ng-show="swatchGroup === 'hex'" class="color-data"><i class="fa fa-tint"></i> #{{ colour.hex }}</div>
             <div ng-show="swatchGroup === 'rgb'" class="color-data">
+              <i class="fa fa-tint"></i>&nbsp;
               <strong>R</strong>{{ colour.r }}&nbsp;
               <strong>G</strong>{{ colour.g }}&nbsp;
               <strong>B</strong>{{ colour.b }}&nbsp;
@@ -44,7 +46,7 @@
       <section>
         <h3>Fonts</h3>
 
-        <div ng-repeat="font in scrapeData.fonts">{{ font.name }}</div>
+        <div ng-repeat="font in scrapeData.fonts"><i class="fa fa-font"></i> {{ font.name }}</div>
       </section>
 
       <section>
@@ -60,14 +62,14 @@
       <section>
         <h3>Audio</h3>
         <div>
-          <div>TODO</div>
+          <div><i class="fa fa-volume-up"></i> TODO</div>
         </div>
       </section>
 
       <section>
         <h3>Video</h3>
         <div>
-          <div>TODO</div>
+          <div><i class="fa fa-video-camera"></i> TODO</div>
         </div>
       </section>
 
