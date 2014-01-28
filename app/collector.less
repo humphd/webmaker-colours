@@ -1,21 +1,26 @@
+// TODO - Pull out Bootstrap classes from HTML. Use as mixins.
+
 /* Mixins */
-.no-padding {
+
+.no-padding() {
   padding: 0;
 }
 
-.constrained {
+.constrained() {
   margin-left: 0;
   margin-right: 0;
 }
 
 .light {
   font-weight: 100;
-}
-  .light strong {
+
+  strong {
     font-weight: 500;
   }
+}
 
 /* Components */
+
 #webmaker-collector header {
   background-color: #013e5f;
   color: #fff;
@@ -27,4 +32,24 @@
   font-size: 1.2rem;
   padding: 5px;
   margin-top: 3em;
+}
+
+.swatches {
+  .constrained;
+
+  > div {
+    .no-padding;
+  }
+}
+
+.image-collection {
+  .constrained;
+
+  > div {
+    .no-padding;
+  }
+
+  img {
+    max-width: 100%;
+  }
 }

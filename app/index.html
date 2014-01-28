@@ -2,15 +2,17 @@
 <html>
 <head>
   <title>WebmakerCollector</title>
-  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="bower_components/makerstrap/makerstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="collector.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/makerstrap/makerstrap.complete.min.css">
+  <link rel="stylesheet/less" type="text/css" href="collector.less">
 </head>
 <body>
 
-  <div id="webmaker-collector">
+  <div id="webmaker-collector" ng-app="wmCollector" ng-controller="collectorController">
     <header class="page-header container">
-      <h2 class="light"><strong>Webmaker</strong>Collector</h2>
+      <h2 class="light pull-left"><strong>Webmaker</strong>Collector</h2>
+      <button class="btn btn-default pull-right">
+        X
+      </button>
     </header>
 
     <div class="container">
@@ -21,53 +23,61 @@
           </div>
           <div class="col-xs-6">
             <div class="btn-group pull-right">
-              <button type="button" class="btn btn-default">Hex</button>
-              <button type="button" class="btn btn-default">RGB</button>
+              <button ng-click="swatchGroup = 'hex'" type="button" class="btn btn-default">Hex</button>
+              <button ng-click="swatchGroup = 'rgb'" type="button" class="btn btn-default">RGB</button>
             </div>
           </div>
         </div>
 
-        <div class="row constrained">
-          <div class="col-xs-4 no-padding" style="background-color: pink;">
-            <div class="color-data">#ed2091</div>
+        <div class="row swatches">
+          <div class="col-xs-4" style="background-color: #{{ colour.hex }};" ng-repeat="colour in scrapeData.colours">
+            <div ng-show="swatchGroup === 'hex'" class="color-data">#{{ colour.hex }}</div>
+            <div ng-show="swatchGroup === 'rgb'" class="color-data">
+              <strong>R</strong>{{ colour.r }}&nbsp;
+              <strong>G</strong>{{ colour.g }}&nbsp;
+              <strong>B</strong>{{ colour.b }}&nbsp;
+            </div>
           </div>
-          <div class="col-xs-4 no-padding" style="background-color: purple;">
-            <div class="color-data">#ed2091</div>
-          </div>
-          <div class="col-xs-4 no-padding" style="background-color: green;">
-            <div class="color-data">#ed2091</div>
-          </div>
-          <div class="col-xs-4 no-padding" style="background-color: papayawhip;">
-            <div class="color-data">#ed2091</div>
-          </div>
-
         </div>
       </section>
 
       <section>
-        <h3>Type</h3>
+        <h3>Fonts</h3>
 
-        <div>Copernicus Blah</div>
-        <div>Copernicus Blah</div>
-        <div>Copernicus Blah</div>
+        <div ng-repeat="font in scrapeData.fonts">{{ font.name }}</div>
       </section>
 
       <section>
-        <h3>Media</h3>
+        <h3>Images</h3>
 
-        <div class="row">
-          <div class="col-xs-6">VIDEO</div>
-          <div class="col-xs-6">VIDEO</div>
-          <div class="col-xs-6">VIDEO</div>
+        <div class="row image-collection">
+          <div ng-repeat="image in scrapeData.media.images" class="col-xs-3">
+            <img src="{{image.src}}">
+          </div>
         </div>
+      </section>
 
+      <section>
+        <h3>Audio</h3>
         <div>
-          <div>Spin Doctor - Two princes.mp3</div>
+          <div>TODO</div>
         </div>
       </section>
+
+      <section>
+        <h3>Video</h3>
+        <div>
+          <div>TODO</div>
+        </div>
+      </section>
+
+
     </div>
 
   </div>
 
+  <script src="bower_components/less/dist/less-1.6.1.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="collector.js"></script>
 </body>
 </html>
