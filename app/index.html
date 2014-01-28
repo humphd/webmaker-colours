@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WebmakerCollector</title>
+  <title>Collector</title>
   <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.css">
   <link rel="stylesheet" type="text/css" href="bower_components/makerstrap/makerstrap.complete.min.css">
   <link rel="stylesheet/less" type="text/css" href="collector.less">
@@ -10,10 +10,11 @@
 
   <div id="webmaker-collector" ng-app="wmCollector" ng-controller="collectorController">
     <header class="page-header container">
-      <h2 class="light pull-left"><strong>Webmaker</strong>Collector</h2>
       <button class="close pull-right">
         <i class="fa fa-times-circle"></i>
       </button>
+
+      <h2 class="light pull-left">Collector</h2>
     </header>
 
     <div class="container">
@@ -31,7 +32,7 @@
         </div>
 
         <div class="row swatches">
-          <div class="col-xs-4" style="background-color: #{{ colour.hex }};" ng-repeat="colour in scrapeData.colours">
+          <div class="col-xs-6 col-sm-4" style="background-color: #{{ colour.hex }};" ng-repeat="colour in scrapeData.colours">
             <div ng-show="swatchGroup === 'hex'" class="color-data"><i class="fa fa-tint"></i> <strong>#</strong>{{ colour.hex }}</div>
             <div ng-show="swatchGroup === 'rgb'" class="color-data">
               <i class="fa fa-tint"></i>&nbsp;
@@ -62,14 +63,15 @@
       <section>
         <h3>Audio</h3>
         <div>
-          <div><i class="fa fa-volume-up"></i> TODO</div>
+          <div ng-repeat="audio in scrapeData.media.audio"><a href="#" target="_blank"><i class="fa fa-volume-up"></i> {{ audio.src[0].url }}</a> ({{ audio.src[0].format }})</div>
         </div>
       </section>
 
       <section>
         <h3>Video</h3>
         <div>
-          <div><i class="fa fa-video-camera"></i> TODO</div>
+          <div ng-repeat="video in scrapeData.media.video"><a href="#" target="_blank"><i class="fa fa-video-camera"></i> {{ video.src[0].url }}</a> ({{ video.src[0].format }})</div>
+
         </div>
       </section>
 
