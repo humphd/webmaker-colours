@@ -32,7 +32,7 @@
 
         <div class="row swatches">
           <div class="col-xs-4" style="background-color: #{{ colour.hex }};" ng-repeat="colour in scrapeData.colours">
-            <div ng-show="swatchGroup === 'hex'" class="color-data"><i class="fa fa-tint"></i> #{{ colour.hex }}</div>
+            <div ng-show="swatchGroup === 'hex'" class="color-data"><i class="fa fa-tint"></i> <strong>#</strong>{{ colour.hex }}</div>
             <div ng-show="swatchGroup === 'rgb'" class="color-data">
               <i class="fa fa-tint"></i>&nbsp;
               <strong>R</strong>{{ colour.r }}&nbsp;
