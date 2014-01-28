@@ -1,0 +1,266 @@
+{
+    "colours": [{
+        "r": 94,
+        "g": 178,
+        "b": 148,
+        "hex": "5eb294"
+    }, {
+        "r": 224,
+        "g": 185,
+        "b": 142,
+        "hex": "e0b98e"
+    }, {
+        "r": 42,
+        "g": 43,
+        "b": 35,
+        "hex": "2a2b23"
+    }, {
+        "r": 17,
+        "g": 74,
+        "b": 104,
+        "hex": "114a68"
+    }],
+    "fonts": [{
+        "name": "Open Sans Light",
+        "resources": [{
+            "url": "https://webmaker.org/resources/fonts/opensans-light-webfont.woff%22",
+            "format": "woff"
+        }, {
+            "url": "https://webmaker.org/resources/fonts/opensans-light-webfont.ttf%22",
+            "format": "truetype"
+        }]
+    }, {
+        "name": "Open Sans",
+        "resources": [{
+            "url": "https://webmaker.org/resources/fonts/opensans-italic-webfont.woff%22",
+            "format": "woff"
+        }, {
+            "url": "https://webmaker.org/resources/fonts/opensans-italic-webfont.ttf%22",
+            "format": "truetype"
+        }]
+    }, {
+        "name": "Open Sans",
+        "resources": [{
+            "url": "https://webmaker.org/resources/fonts/opensans-regular-webfont.woff%22",
+            "format": "woff"
+        }, {
+            "url": "https://webmaker.org/resources/fonts/opensans-regular-webfont.ttf%22",
+            "format": "truetype"
+        }]
+    }, {
+        "name": "Open Sans",
+        "resources": [{
+            "url": "https://webmaker.org/resources/fonts/opensans-bolditalic-webfont.woff%22",
+            "format": "woff"
+        }, {
+            "url": "https://webmaker.org/resources/fonts/opensans-bolditalic-webfont.ttf%22",
+            "format": "truetype"
+        }]
+    }, {
+        "name": "Open Sans",
+        "resources": [{
+            "url": "https://webmaker.org/resources/fonts/opensans-bold-webfont.woff%22",
+            "format": "woff"
+        }, {
+            "url": "https://webmaker.org/resources/fonts/opensans-bold-webfont.ttf%22",
+            "format": "truetype"
+        }]
+    }, {
+        "name": "FontAwesome",
+        "resources": [{
+            "url": "https://webmaker.org/bower/font-awesome/font/fontawesome-webfont.eot?#iefix&v=3.2.1%22",
+            "format": "embedded-opentype"
+        }, {
+            "url": "https://webmaker.org/bower/font-awesome/font/fontawesome-webfont.woff?v=3.2.1%22",
+            "format": "woff"
+        }, {
+            "url": "https://webmaker.org/bower/font-awesome/font/fontawesome-webfont.ttf?v=3.2.1%22",
+            "format": "truetype"
+        }, {
+            "url": "https://webmaker.org/bower/font-awesome/font/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1%22",
+            "format": "svg"
+        }]
+    }, {
+        "name": "Open Sans",
+        "resources": [{
+            "url": "https://webmaker.org/media/fonts/OpenSans-Bold-webfont.eot?#iefix2013%22",
+            "format": "embedded-opentype"
+        }, {
+            "url": "https://webmaker.org/media/fonts/OpenSans-Bold-webfont.woff?2013%22",
+            "format": "woff"
+        }, {
+            "url": "https://webmaker.org/media/fonts/OpenSans-Bold-webfont.ttf?2013%22",
+            "format": "truetype"
+        }]
+    }, {
+        "name": "Open Sans",
+        "resources": [{
+            "url": "https://webmaker.org/media/fonts/OpenSans-Regular-webfont.eot?#iefix2013%22",
+            "format": "embedded-opentype"
+        }, {
+            "url": "https://webmaker.org/media/fonts/OpenSans-Regular-webfont.woff?2013%22",
+            "format": "woff"
+        }, {
+            "url": "https://webmaker.org/media/fonts/OpenSans-Regular-webfont.ttf?2013%22",
+            "format": "truetype"
+        }]
+    }, {
+        "name": "Open Sans Light",
+        "resources": [{
+            "url": "https://webmaker.org/media/fonts/OpenSans-Light-webfont.eot?#iefix2013%22",
+            "format": "embedded-opentype"
+        }, {
+            "url": "https://webmaker.org/media/fonts/OpenSans-Light-webfont.woff?2013%22",
+            "format": "woff"
+        }, {
+            "url": "https://webmaker.org/media/fonts/OpenSans-Light-webfont.ttf?2013%22",
+            "format": "truetype"
+        }]
+    }, {
+        "name": "Open Sans ExtraBoldItalic",
+        "resources": [{
+            "url": "https://webmaker.org/media/fonts/OpenSans-ExtraBoldItalic-webfont.eot?#iefix-2013%22",
+            "format": "embedded-opentype"
+        }, {
+            "url": "https://webmaker.org/media/fonts/OpenSans-ExtraBoldItalic-webfont.woff%22",
+            "format": "woff"
+        }, {
+            "url": "https://webmaker.org/media/fonts/OpenSans-ExtraBoldItalic-webfont.ttf%22",
+            "format": "truetype"
+        }, {
+            "url": "https://webmaker.org/media/fonts/OpenSans-ExtraBoldItalic-webfont.svg#OpenSansExtraBoldItalic%22",
+            "format": "svg"
+        }]
+    }],
+    "media": {
+        "images": [{
+            "src": "https://webmaker.org/img/logo.png",
+            "type": "inline"
+        }, {
+            "src": "https://webmaker.org/img/cat-off.png",
+            "type": "inline"
+        }, {
+            "src": "https://webmaker.org/img/browser-off.png",
+            "type": "inline"
+        }, {
+            "src": "https://webmaker.org/img/browser-on.png",
+            "type": "inline"
+        }, {
+            "src": "https://webmaker.org/img/cat.gif",
+            "type": "inline"
+        }, {
+            "src": "https://webmaker.org/img/front-page/manilla-story.jpg",
+            "type": "inline"
+        }, {
+            "src": "https://webmaker.org/img/front-page/teach-cta.png",
+            "type": "inline"
+        }, {
+            "src": "https://webmaker.org/img/front-page/learn-cta.png",
+            "type": "inline"
+        }, {
+            "src": "https://webmaker.org/img/front-page/get-together-cta.png",
+            "type": "inline"
+        }, {
+            "src": "https://stuff.webmaker.org/thumbnails/serious_cat_is_serious.jpg",
+            "type": "inline"
+        }, {
+            "src": "https://stuff.webmaker.org/editorial-assets/aug18startermakemovieposter.jpg",
+            "type": "inline"
+        }, {
+            "src": "https://stuff.webmaker.org/editorial-assets/aug18startermakewishyou.jpg",
+            "type": "inline"
+        }, {
+            "src": "https://stuff.webmaker.org/editorial-assets/aug18indiasgreatday.jpg",
+            "type": "inline"
+        }, {
+            "src": "https://stuff.webmaker.org/thumbnails/6_book.jpg",
+            "type": "inline"
+        }, {
+            "src": "https://s3.amazonaws.com/makes.org/user_uploads/eee9ccb2-281c-43f7-aae0-af3f7955b088.jpg",
+            "type": "inline"
+        }, {
+            "src": "https://s3.amazonaws.com/makes.org/user_uploads/f1425c15-4ff1-48d5-aaf0-a1d9a24017e3.gif",
+            "type": "inline"
+        }, {
+            "src": "https://stuff.webmaker.org/thumbnails/beans.jpg",
+            "type": "inline"
+        }, {
+            "src": "https://webmaker.org/img/cat.gif",
+            "type": "css"
+        }, {
+            "src": "https://webmaker.org/img/bkg-pat-wave.png",
+            "type": "css"
+        }, {
+            "src": "https://webmaker.org/img/bkg-pat-wave.png",
+            "type": "css"
+        }, {
+            "src": "https://webmaker.org/img/right-arrow.png",
+            "type": "css"
+        }, {
+            "src": "https://webmaker.org/img/thumbs/popcorn-grey.png",
+            "type": "css"
+        }, {
+            "src": "https://webmaker.org/img/thumbs/thimble-grey.png",
+            "type": "css"
+        }, {
+            "src": "https://webmaker.org/img/thumbs/x-ray-goggles-grey.png",
+            "type": "css"
+        }, {
+            "src": "https://webmaker.org/img/blue-arrow-edge.png",
+            "type": "css"
+        }, {
+            "src": "https://webmaker.org/img/cat.gif",
+            "type": "css"
+        }, {
+            "src": "https://webmaker.org/img/bkgFooter.jpg",
+            "type": "css"
+        }, {
+            "src": "https://webmaker.org/img/tab.png",
+            "type": "css"
+        }, {
+            "src": "https://webmaker.org/media/img/tabzilla/menu-arrow.png",
+            "type": "css"
+        }, {
+            "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAAG1BMVEX///+AgIC/v79gYGCfn59AQEDf398gICAAAAD2w5uVAAAACXRSTlMICAgICAgICAj5MN6qAAADm0lEQVR42g2TzXaiShhFT/2BwxJRMyzBnzssBfQOC0QzLURjD1FjkiFq7L5DV/fqTj/25QW+76x9zsYVJ5+ogWdMLq37wWs3TjDCEOtRu57dXlwSOKt8rLul23PSuaLgimnb2xIBYqWrR3Ly5bFiq3BaezNdFU90ls1o7yven7v7LMpnKDWy4rzkNAjpr5i7oTPvaeFaMGOMh+4wn1V2alhOl3DL3qXGa/XGvFkLHUgSvqWybzuv18efOyB+QZmRyzYXliZ1T3dGimUiAapIYQ5987xh9qGXAV4DRcIxMLhVsJIoqe9VFfFpW/tst6zQ5pUdvPwB/0cNnIqyzw1zxL0qUb8UV5ef6EjFnogXkofWIUkFFDW+035/Uqdd7HGXj3o2UnjUIB2RiNMC/Lfm44+QvEzZsKwDCUz5UsXpign8xzVjxHeuybZ44GGaZHS1trL60izC8H0HIfQFzpIo4quRJLMke9SPPT78lHhnwEGHhNTNpG457o5fSmocfrT4K3fLnnPcDYiMQa1sO9RMg9SFaL92jvmKm6a0iNIgD+UWHi0QnadyRv5RNobYV2ZpFKLC+AVas3Tp35fbdgQcSFcQb2Pzzn4ETUUF0/MPMXUf0qpFlQVrDymeFWb2hENcPp3WzozTO/gh7knobt+aknXd00XMIWXHvUbtSz0HY75AO0kaOCbY8ZOoKw+0FyDRE7kM5PJNdYVczb+ZJ9e3EA0mqnMt4YxFkGd4v4X5RmxLnYD/PNLZXosDlZGroFWptlg95sjBXHw+VvIWadRk1W89yDvvNutJiMvMLaWT1KZo2fAU3MU5S7AJJlG9Wki170i6AcGg6FoDDl5vDICNzdTBcBBReeSQ/ithXzTxtkz13v1R/zC4HX7GGYXr4ks+x1Kuy2Fqm0Pf9VLxqjssXEwd6HzRzvk5ieJxLvNn2kQwEYQSLXe4w9klsWV6IlL7o0i5gxpPRePbQ9/Yz8Fox8jAv6HXbI+Fx4M9yyfJUBuzBcpvD3ahvwGf5baUZEw2i+Hlh6qdhvNeHhGmFzOIKXZGrZqHN1bRSDrFHI0YkzbT8MA3+NbqVMYhebMiGH19qZb4XIC+Jdepgut8sW77B/qKuzsrXvtD+ZwkKv5VrrXfHVJ8jjSdWGTtV+B9I2SIh6ZJA/M7OAmjoVJ/BSHvBfWHKY5JY4BRdQP3Vo3fkz32Xp9HtUN4N4OLiVopEEefR/J02Zt+y//sUfo/W1DI/wH8xQkAAAAASUVORK5CYII=",
+            "type": "css"
+        }, {
+            "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABlBMVEX///9ISEhr7AOpAAAAAXRSTlMAQObYZgAAACRJREFUCB1jQAYcAgwyFgx2NQzyPxj4PzCwP2BgPsDA2MCABAB3igVoBVbiiwAAAABJRU5ErkJggg==",
+            "type": "css"
+        }, {
+            "src": "https://webmaker.org/media/img/tabzilla/tab.png",
+            "type": "css"
+        }],
+        "audio": [{
+            "src": [{
+                "url": "http://some.audio.com",
+                "format": "mp4"
+            }, {
+                "url": "http://some.audio.com",
+                "format": "ogg"
+            }],
+            "type": "inline"
+        }, {
+            "src": [{
+                "url": "http://some.audio.com",
+                "format": "mp4"
+            }],
+            "type": "soundcloud"
+        }],
+        "video": [{
+            "src": [{
+                "url": "http://some.video.com",
+                "format": "mp4"
+            }, {
+                "url": "http://some.video.com",
+                "format": "ogg"
+            }],
+            "type": "inline"
+        }, {
+            "src": [{
+                "url": "http://youtube.com/something",
+                "format": "mp4"
+            }],
+            "type": "youtube"
+        }]
+    }
+}
