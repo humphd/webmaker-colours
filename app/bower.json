@@ -16,6 +16,7 @@
   "dependencies": {
     "makerstrap": "0.0.3",
     "angular": "1.2.10",
-    "less": "1.6.1"
+    "less": "1.6.1",
+    "font-awesome": "4.0.3"
   }
 }
