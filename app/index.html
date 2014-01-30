@@ -45,17 +45,17 @@
       </section>
 
       <section>
-        <h3>Fonts</h3>
+        <h3>Font Families</h3>
 
-        <div ng-repeat="font in scrapeData.fonts"><i class="fa fa-font"></i> {{ font.name }}</div>
+        <div ng-repeat="font in scrapeData.fontFamilies"><i class="fa fa-font"></i> {{ font }}</div>
       </section>
 
       <section>
         <h3>Images</h3>
 
-        <div class="row image-collection">
+        <div masonry class="row image-collection">
           <div ng-repeat="image in scrapeData.media.images" class="col-xs-3">
-            <img src="{{image.src}}">
+            <img verify-src="{{image.src}}">
           </div>
         </div>
       </section>
@@ -63,17 +63,21 @@
       <section>
         <h3>Audio</h3>
         <div>
-          <div ng-repeat="audio in scrapeData.media.audio"><a href="#" target="_blank"><i class="fa fa-volume-up"></i> {{ audio.src[0].url }}</a> ({{ audio.src[0].format }})</div>
+          <div ng-repeat="audio in scrapeData.media.audio"><i class="fa fa-volume-up"></i><a href="#" target="_blank">{{ audio.src[0].url }}</a> <span class="format">({{ audio.src[0].format }})</span></div>
         </div>
       </section>
 
       <section>
         <h3>Video</h3>
         <div>
-          <div ng-repeat="video in scrapeData.media.video"><a href="#" target="_blank"><i class="fa fa-video-camera"></i> {{ video.src[0].url }}</a> ({{ video.src[0].format }})</div>
+          <div ng-repeat="video in scrapeData.media.video"><i class="fa fa-video-camera"></i><a href="#" target="_blank">{{ video.src[0].url }}</a> <span class="format">({{ video.src[0].format }})</span></div>
 
         </div>
       </section>
+
+      <footer>
+        <p>Brought to you by <a href="http://webmaker.org" target="_blank">Webmaker</a></p>
+      </footer>
 
 
     </div>
@@ -81,7 +85,10 @@
   </div>
 
   <script src="bower_components/less/dist/less-1.6.1.js"></script>
+  <script src="bower_components/lodash/dist/lodash.js"></script>
   <script src="bower_components/angular/angular.js"></script>
+
+  <script src="directives.js"></script>
   <script src="collector.js"></script>
 </body>
 </html>
