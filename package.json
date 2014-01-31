@@ -5,5 +5,12 @@
   "description": "Explore colour palettes for web pages",
   "author": "David Humphrey",
   "license": "MPL 2.0",
-  "version": "0.1"
+  "version": "v0.1.0",
+  "devDependencies": {
+    "grunt": "0.4.2",
+    "grunt-contrib-concat": "0.3.0",
+    "grunt-contrib-less": "0.9.0",
+    "grunt-contrib-copy": "0.5.0",
+    "grunt-replace": "0.5.1"
+  }
 }
