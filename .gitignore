@@ -1,1 +1,6 @@
 *~
+bower_components/
+node_modules/
+app/index.compiled.html
+app/collector.compiled.css
+app/index.dist.compiled.html

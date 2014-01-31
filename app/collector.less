@@ -1,0 +1,98 @@
+// TODO - Pull out Bootstrap classes from HTML. Use as mixins.
+
+/* Mixins */
+
+.no-padding() {
+  padding: 0;
+}
+
+.constrained() {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.light {
+  font-weight: 100;
+
+  strong {
+    font-weight: 500;
+  }
+}
+
+/* Components */
+
+i {
+  color: #999;
+}
+
+#webmaker-collector {
+  min-width: 320px;
+}
+
+#webmaker-collector header {
+  background-color: #013e5f;
+  color: #fff;
+  margin-top: 0;
+  padding: 15px;
+
+  h2 {
+    margin: 0;
+  }
+
+  .close {
+    opacity: 1;
+
+    i {
+      font-size: 3rem;
+      color: #fff;
+      position: relative;
+      top: 2px;
+    }
+  }
+}
+
+.color-data {
+  background-color: rgba(255,255,255,1);
+  font-size: 1.1rem;
+  padding: 5px;
+  margin-top: 3em;
+}
+
+.swatches {
+  .constrained;
+
+  > div {
+    .no-padding;
+  }
+}
+
+.image-collection {
+  .constrained;
+
+  > div {
+    .no-padding;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+section {
+  .fa {
+    font-size: 0.8em;
+    margin-right: 0.5em;
+  }
+
+  .format {
+    font-size: 0.8em;
+    color: #999;
+  }
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding: 20px 0;
+  margin-top: 40px;
+}

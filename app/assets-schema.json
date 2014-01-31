@@ -1,0 +1,194 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "http://jsonschema.net",
+  "required": false,
+  "properties": {
+    "colours": {
+      "type": "array",
+      "id": "http://jsonschema.net/colours",
+      "required": false,
+      "items": {
+        "type": "object",
+        "id": "http://jsonschema.net/colours/0",
+        "required": false,
+        "properties": {
+          "b": {
+            "type": "number",
+            "id": "http://jsonschema.net/colours/0/b",
+            "required": false
+          },
+          "g": {
+            "type": "number",
+            "id": "http://jsonschema.net/colours/0/g",
+            "required": false
+          },
+          "hex": {
+            "type": "string",
+            "id": "http://jsonschema.net/colours/0/hex",
+            "required": false
+          },
+          "r": {
+            "type": "number",
+            "id": "http://jsonschema.net/colours/0/r",
+            "required": false
+          }
+        }
+      }
+
+    },
+    "fonts": {
+      "type": "array",
+      "id": "http://jsonschema.net/fonts",
+      "required": false,
+      "items": {
+        "type": "object",
+        "id": "http://jsonschema.net/fonts/0",
+        "required": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "id": "http://jsonschema.net/fonts/0/name",
+            "required": false
+          },
+          "resources": {
+            "type": "array",
+            "id": "http://jsonschema.net/fonts/0/resources",
+            "required": false,
+            "items": {
+              "type": "object",
+              "id": "http://jsonschema.net/fonts/0/resources/0",
+              "required": false,
+              "properties": {
+                "format": {
+                  "type": "string",
+                  "id": "http://jsonschema.net/fonts/0/resources/0/format",
+                  "required": false
+                },
+                "url": {
+                  "type": "string",
+                  "id": "http://jsonschema.net/fonts/0/resources/0/url",
+                  "required": false
+                }
+              }
+            }
+
+          }
+        }
+      }
+
+    },
+    "media": {
+      "type": "object",
+      "id": "http://jsonschema.net/media",
+      "required": false,
+      "properties": {
+        "audio": {
+          "type": "array",
+          "id": "http://jsonschema.net/media/audio",
+          "required": false,
+          "items": {
+            "type": "object",
+            "id": "http://jsonschema.net/media/audio/0",
+            "required": false,
+            "properties": {
+              "src": {
+                "type": "array",
+                "id": "http://jsonschema.net/media/audio/0/src",
+                "required": false,
+                "items": {
+                  "type": "object",
+                  "id": "http://jsonschema.net/media/audio/0/src/0",
+                  "required": false,
+                  "properties": {
+                    "format": {
+                      "type": "string",
+                      "id": "http://jsonschema.net/media/audio/0/src/0/format",
+                      "required": false
+                    },
+                    "url": {
+                      "type": "string",
+                      "id": "http://jsonschema.net/media/audio/0/src/0/url",
+                      "required": false
+                    }
+                  }
+                }
+
+              },
+              "type": {
+                "type": "string",
+                "id": "http://jsonschema.net/media/audio/0/type",
+                "required": false
+              }
+            }
+          }
+
+        },
+        "images": {
+          "type": "array",
+          "id": "http://jsonschema.net/media/images",
+          "required": false,
+          "items": {
+            "type": "object",
+            "id": "http://jsonschema.net/media/images/0",
+            "required": false,
+            "properties": {
+              "src": {
+                "type": "string",
+                "id": "http://jsonschema.net/media/images/0/src",
+                "required": false
+              },
+              "type": {
+                "type": "string",
+                "id": "http://jsonschema.net/media/images/0/type",
+                "required": false
+              }
+            }
+          }
+
+        },
+        "video": {
+          "type": "array",
+          "id": "http://jsonschema.net/media/video",
+          "required": false,
+          "items": {
+            "type": "object",
+            "id": "http://jsonschema.net/media/video/0",
+            "required": false,
+            "properties": {
+              "src": {
+                "type": "array",
+                "id": "http://jsonschema.net/media/video/0/src",
+                "required": false,
+                "items": {
+                  "type": "object",
+                  "id": "http://jsonschema.net/media/video/0/src/0",
+                  "required": false,
+                  "properties": {
+                    "format": {
+                      "type": "string",
+                      "id": "http://jsonschema.net/media/video/0/src/0/format",
+                      "required": false
+                    },
+                    "url": {
+                      "type": "string",
+                      "id": "http://jsonschema.net/media/video/0/src/0/url",
+                      "required": false
+                    }
+                  }
+                }
+
+              },
+              "type": {
+                "type": "string",
+                "id": "http://jsonschema.net/media/video/0/type",
+                "required": false
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
