@@ -6,8 +6,8 @@ angular.module('wmCollector', ['wmCollector.directives'])
 
   })
   .constant('lodash', window._)
-  .controller('collectorController', ['$scope', '$http', 'lodash',
-    function ($scope, $http, _) {
+  .controller('collectorController', ['$scope', 'lodash',
+    function ($scope, _) {
 
       function massageData(data) {
         data.fontFamilies = [];
@@ -23,20 +23,20 @@ angular.module('wmCollector', ['wmCollector.directives'])
         return data;
       }
 
-      // TEMP - Eventually json will be passed directly in from extension wrapper
-
-      $http({
-        method: 'GET',
-        url: 'mock2.json'
-      })
-        .success(function (data, status, headers, config) {
-          $scope.scrapeData = massageData(data);
-        })
-        .error(function (data, status, headers, config) {});
+      addon.port.on("render-data", function(pageData) {
+        console.log('render-data', pageData);
+        $scope.scrapeData = massageData(pageData);
+        $scope.$apply();
+      });
 
       // Defaults
 
       $scope.swatchGroup = 'rgb';
 
+
+      // UI is ready!
+      addon.port.emit("ui-ready");
+
     }
+
   ]);

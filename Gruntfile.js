@@ -33,7 +33,7 @@ module.exports = function (grunt) {
     },
     copy: {
       dist: {
-        src: 'app/partial.html',
+        src: 'app/index.dist.compiled.html',
         dest: 'data/app.html'
       }
     },
