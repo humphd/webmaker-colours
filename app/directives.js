@@ -1,4 +1,12 @@
 angular.module('wmCollector.directives', [])
+.directive('safeSrc', function () {
+  return {
+    restrict: 'A',
+    link: function (scope, element, attrs) {
+      element.attr('src', attrs.safeSrc);
+    }
+  };
+})
   .directive('verifySrc', function () {
     return {
       restrict: 'A',
